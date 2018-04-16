@@ -1,0 +1,40 @@
+{
+  "name": "ts-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p .",
+    "build-module": "node build.js",
+    "start": "node build/index.js"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/build/"
+    ],
+    "transform": {
+      "\\.[jt]sx?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/*.{js,jsx,ts,tsx}"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^22.4.3",
+    "js-package": "file:///home/felipe/Desktop/ts-exports-bug/js-package",
+    "ts-jest": "^22.4.3",
+    "typescript": "^2.8.1"
+  }
+}
